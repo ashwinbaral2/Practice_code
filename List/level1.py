@@ -2,8 +2,14 @@
 
 nums = [10, 20, 30, 40]
 
-
-
+first = nums[0]
+second = nums[1]
+third = nums[2]
+last = nums[-1]
+print("first element:", first)
+print("last element:", last)
+print("second element:", second)
+print("third element:", third)
 # Output:
 # First element: 10
 # Last element: 40
@@ -11,13 +17,17 @@ nums = [10, 20, 30, 40]
 # Q2: Print how many items are in the list (using len())
 
 nums = [5, 7, 9, 11]
-
+length = len(nums)
+print("length of list:", length)
 
 # Output: Length of list: 4
 
 # Q3: Print each item in the list on a new line
 
 items = ["apple", "banana", "cherry"]
+print (items[0])
+print (items[1])
+print (items[2])
 
 
 # Output:

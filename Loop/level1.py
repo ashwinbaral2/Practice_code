@@ -47,6 +47,17 @@ print( f"Your total cost price for the ticket is {ticket_price}.");
 #   - Else → print "Submit assignments first"
 # If attendance is below 75% → print "Not enough attendance"
 
+attendance = float(input("Enter your attendance percentage: "))
+if attendance > 75:
+    assignments_complete = input("Are all assignments submitted? (yes/no): ").strip().lower()
+    if assignments_complete == "yes":
+        print("Eligible for exam")
+    else:
+        print("Submit assignments first")
+else:
+    print("Not enough attendance")
+
+
 
 # Q3. Internet Package Selection
 # ------------------------------
@@ -56,3 +67,30 @@ print( f"Your total cost price for the ticket is {ticket_price}.");
 # If user chooses "basic" plan → check if data usage is below 100GB
 #   - If below 100GB → give 5% discount
 #   - Else → no discount
+
+plan = input("Choose your internet plan (premium/basic): ").strip().lower()
+if plan == "premium":
+    annual_billing = input("Do you want annual billing? (yes/no): ").strip().lower()
+    if annual_billing == "yes":
+        discount = 0.25
+        print("You get a 25% discount on the premium plan.")
+    else:
+        discount = 0
+        print("No discount applied on the premium plan.")
+elif plan == "basic":
+    data_usage = float(input("Enter your monthly data usage in GB: "))
+    if data_usage < 100:
+        discount = 0.05
+        print("You get a 5% discount on the basic plan.")
+    else:
+        discount = 0
+        print("No discount applied on the basic plan.")
+else:
+    discount = None
+    print("Invalid plan selected.")
+base_price = 1000 if plan == "premium" else 500
+if discount is not None:
+    final_price = base_price * (1 - discount)
+    print(f"Your final price is: {final_price}")
+
+

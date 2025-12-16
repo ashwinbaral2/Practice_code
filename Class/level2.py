@@ -13,6 +13,7 @@ class Student:
 
 
 print(Student)
+
 # ----------------------------------------------
 # Q2.
 # Create a class Car.
@@ -20,12 +21,22 @@ print(Student)
 # ----------------------------------------------
 
 
-class Car:
-    my_car = {
-        "Name": "Toyota",
-        "Model": "Corolla",
-        "Price": "20 Lakhs"
-    }
+# class Car:
+#     my_car = {
+#         "Name": "Toyota",
+#         "Model": "Corolla",
+#         "Price": "20 Lakhs"
+#     }
+
+class Car():
+    Name = "Mercedes Benz"
+    Model = "G wagen"
+    Price = "50 lakhs"
+    Colour = "Black"
+
+barsha_Car = Car()
+print(barsha_Car.Price)
+
 
 
 # ----------------------------------------------
@@ -36,11 +47,40 @@ class Car:
 # Create an object and print the name.
 # ----------------------------------------------
 
-class Dog:
-    name = "Tommy"
+class Dog():
+    def doggy(self,name):
+        print(f"Hi. I am {name}. I do woof woof. I am cute and fluffy.")
+       
+C = Dog()
+C.doggy("gulugulu")
 
 
-print(Dog.name)
+class Students():
+    def student(self,name,marks):
+        print(f"I am {name}. I got {marks} out of 100 in mathematics examination.")
+
+S = Students()
+S.student("Aswin Baral", "99.9999")
+S.student("Barsha Koirala Baral", 100)
+
+class Students():
+    def __init__(self,name,marks):
+        self.name = name
+        self.marks = marks
+        print(f"I am {name}. I got {marks} out of 100 in mathematics examination.")
+
+Students("Aswin Baral", "99.9999")
+Students("Barsha Koirala Baral", 100)
+
+class dog():
+    def __init__(self,name,breed, owner):
+        self.name = name
+        self.breed = breed
+        self.owner = owner
+        print(f"Our dog is {name} of breed {breed} and we, {owner}, are the owner of the dog.")
+
+dog("Lucy", "Golden retriver", "Aswin and Barsha")
+
 
 # ----------------------------------------------
 

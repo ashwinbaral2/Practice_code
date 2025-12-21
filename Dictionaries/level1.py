@@ -8,7 +8,9 @@
 # ----------------------------------------------
 # Your code here:
 student = {"name" : "aswin",'age' : 23 ,'city' : 'Naya Thimi'}
-print(student);
+print(student)
+student = {"name": "John", "age": 21, "city": "New York"}
+print(student)
 # Output: {'name': 'John', 'age': 21, 'city': 'New York'}
 
 

@@ -1,36 +1,54 @@
 # ==============================
-# Topic: FOR LOOPS (Next Level)
-# Level: Core logic building
+# Topic: NESTED FOR LOOPS & PATTERNS
+# Level: Logic sharpening
 # Instructions:
-# - Use for loops only unless stated
-# - Do NOT use built-in shortcuts unless allowed
+# - Use nested for loops
+# - Do NOT use string multiplication tricks
 # ==============================
 
 
 # Q1.
-# Write a program that prints all numbers from 1 to 50.
-# Each number should be printed on a new line.
+# Write a program that prints the following pattern:
+# *
+# **
+# ***
+# ****
+# *****
+# (Number of rows = 5)
 
 
 # Q2.
 # Write a program that takes a number n as input
-# and prints the multiplication table of n
-# from 1 to 10.
+# and prints a square pattern of stars of size n.
+# Example for n = 3:
+# ***
+# ***
+# ***
 
 
 # Q3.
-# Write a program that takes a number n as input
-# and calculates the sum of all numbers
-# from 1 to n using a for loop.
+# Write a program that prints the following pattern:
+# 1
+# 12
+# 123
+# 1234
+# 12345
 
 
 # Q4.
-# Write a program that takes a string as input
-# and counts how many vowels are present in it
-# using a for loop.
+# Write a program that prints the following pattern:
+# 54321
+# 5432
+# 543
+# 54
+# 5
 
 
 # Q5.
 # Write a program that takes a number n as input
-# and prints all numbers between 1 and n
-# that are divisible by both 3 and 5.
+# and prints a right-aligned triangle of stars.
+# Example for n = 4:
+#    *
+#   **
+#  ***
+# ****

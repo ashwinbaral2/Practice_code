@@ -48,3 +48,4 @@ T = 4
 n = 1  # compounded annually
 CI = P * (1 + R / n) ** (n * T) - P
 print(f"Compound Interest: Rs. {CI:.2f}")
+print(type(CI))
